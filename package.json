@@ -1,7 +1,8 @@
 {
-  "name": "express-ts-api",
+  "name": "simple-online-shop-api",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "Simple Online Shop API",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts"

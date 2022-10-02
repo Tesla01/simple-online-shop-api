@@ -1,5 +1,28 @@
 export default {
     port: 1337,
     saltWorkFactor: 10,
-    dbUri: "mongodb://root:example@localhost:27017/express-ts-api-db?authSource=admin"
+    accessTokenTtl: "15m",
+    refreshTokenTtl: "1y",
+    dbUri: "mongodb://root:example@localhost:27017/express-ts-api-db?authSource=admin",
+    publicKey: `-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSkm9je+TcJL2jXU15+4l04rVe
+aQDYnX8+eGkNKHulqIUXT80UfmjZQO4BBIOVn5j+xD4V/o+8Nk0uJ1ORaT1hXQnH
+VPPxPPrTlORMRqa+QpnKm/KfOzt0SymDlc+Gwk9oCY3rkPci2DvXEPHw/hVtzc38
+OuUDUzqE6cLYQ1xPwQIDAQAB
+-----END PUBLIC KEY-----`,
+    privateKey: `-----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQCSkm9je+TcJL2jXU15+4l04rVeaQDYnX8+eGkNKHulqIUXT80U
+fmjZQO4BBIOVn5j+xD4V/o+8Nk0uJ1ORaT1hXQnHVPPxPPrTlORMRqa+QpnKm/Kf
+Ozt0SymDlc+Gwk9oCY3rkPci2DvXEPHw/hVtzc38OuUDUzqE6cLYQ1xPwQIDAQAB
+AoGAD7zzgu4hs9WqGymAkTGGH+vb56hEs/2tVQre1M/c/vuqVsd10NaF8ZX8OFXA
+v0ckyW5O8FOmIWJ/RQ5p9bokIe9SNRGCMIIHkUULfjYWYGGSYgEP+PqB+y2afsp/
+fPCePPHHKBvQdEQeJkt4b9yQ7r54oHgeULHeFw+GYc3V4rUCQQDacDi0aTi1CtAf
+SO34ai+FzKBw+q4AqY4EdKJZPUUlRBdPSVDSU/zcxF/chdBzET/1r20aVjWWAHXQ
+KfdB0nq3AkEAq8ad4Vww+XAOpFOL8LiFR+MwhJuJrSEZZ2xcoogp0VCGPaEe6UDQ
+CLGMUYkSpWYQZhf6BLMB+RQLnyD/aTrxRwJBAMri5tgyzxfgpjQYoedUgTVOPUsS
+muFEmwLqbgxjC0E0wE3FNAtXNQq8XqlNpLHruLNyr+yBXB4p6UNiZyS84XsCQQCH
+4sMad9e2O1MZ442cjBvDVpIXFQPAlaKHEk3ltVl/X/gR4NeXJdJsTif2iDzb4vWu
+DeGWvhUdeSIIbA4grKQZAkA8Sh9LBvt2dAQF+d4qaivBE5o4atVB5R/CN2FIiZee
+8EJnP0zuZPfP1FjToCDJuVzUPGdWR05j75V7FirKj7TP
+-----END RSA PRIVATE KEY-----`
 }
